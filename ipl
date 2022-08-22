@@ -1,0 +1,7 @@
+select * from ipl
+
+modify column Tournament year
+alter table ipl
+drop column tour_yea
+
+select player,max(`Runds Scored`) from ipl where `ipl`.`Tournament`=2016 group by  
